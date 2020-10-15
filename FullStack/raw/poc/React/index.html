@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- APP-->
+    <div id = "root"></div>
+<script type = "text/babel">
+let users = ["Prateek", "Grazel", "Tripathi", "Khanakkkk", "Prarthanaaaaaaa"]
+function Hello(prop) {
+    return <h1>Hello From {prop.name} </h1>
+}
+
+function HelloParent() {
+            return (
+                <React.Fragment>
+                    {users.map(function (user) {
+                        return <Hello name={user} />
+                    })}
+                </React.Fragment>
+            )
+        }
+
+ReactDOM.render(<HelloParent />, document.getElementById("root"));
+
+</script>
+    
+</body>
+</html>

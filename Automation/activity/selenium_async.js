@@ -73,6 +73,7 @@ async function login() {
         console.log(err);
     }
 }
+
 async function createChallenge(challenge) {
     let createChallengebtn = await tab.findElement(swd.By.css("button[class='btn btn-green backbone pull-right']"));
     await createChallengebtn.click();

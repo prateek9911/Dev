@@ -1,0 +1,22 @@
+{
+  "name": "VS_Code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "jquery": "^3.5.1",
+    "jstree": "^3.3.10"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.20.0",
+    "xterm": "^4.8.1"
+  }
+}

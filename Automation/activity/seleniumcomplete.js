@@ -86,6 +86,7 @@ tabWillBeOpenedPromise
     .catch(function (err) {
         console.log(err);
     })
+    
 function questionSolver() {
 
     return new Promise(function (resolve, reject) {

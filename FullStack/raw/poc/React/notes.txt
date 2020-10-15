@@ -1,0 +1,3 @@
+Always expose url on the basis of entities
+REST api always send data in json format
+REST API are always stateless
